@@ -4,10 +4,131 @@
     position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Flytter elementet til midten */
+    transform: translate(-50%, -50%);
 }
 
 .illustration img{ 
     width: 90%;
 }
 
+/* FORSIDE SLUT */
+
+.temaer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 7vw;
+    padding: 50px;
+}
+
+.temaer a{
+    padding: 18px;
+}
+
+.temaer a:hover{
+    text-decoration: underline;
+  }
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+nav {
+    display: none;
+    font-family: futura;
+  }
+
+
+.burger {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+  
+
+.hidden-menu {
+    display: block;
+    background-color: #E8E4D9;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+  }
+ 
+
+.hidden-menu {
+    display: none;
+}
+
+.hidden-menu.show {
+    display: block; 
+}
+
+
+.hidden-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.hidden-menu li {
+    font-size: 6vw;
+    padding: 6vw; 
+    text-transform: uppercase;
+}
+
+.hidden-menu ul li:hover {
+text-decoration: underline;
+}
+
+.hidden-menu p{
+  font-family: futura, sans-serif;
+}
+
+@media (width > 800px){
+
+
+    .burger-menu {
+        display: none; 
+      }
+
+      nav {
+        display: block;
+        margin-left: auto;
+        font-size: 1.5vw;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+      }
+      
+      nav ul {
+        display: flex;
+        gap: 50px; 
+        list-style-type: none;
+        margin: 0;
+      }
+
+      nav ul li:hover{
+        text-decoration: underline;
+      }
+
+      .logo {
+        margin-right: auto;
+    }
+    
+    
+}

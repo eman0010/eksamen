@@ -1,3 +1,9 @@
 body.index{
     background-color: #204ECF;
 }
+
+body{
+    background-color: #E8E4D9;
+    color: #204ECF;
+    font-family: futura, sans-serif;
+}
