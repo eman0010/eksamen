@@ -1,0 +1,62 @@
+/* Generelle stilarter */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0047FF;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    margin-top: 10vh;
+}
+
+/* Titelstil */
+h1 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.highlight {
+    color: #FFFFFF;
+}
+
+/* Illustration */
+.illustration {
+    margin-top: -50px;
+}
+
+.illustration img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer links */
+nav span {
+    cursor: pointer;
+}
+
+nav span:hover {
+    text-decoration: underline;
+}
