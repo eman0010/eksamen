@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 10px;
  }
 
  h1, h2{
