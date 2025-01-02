@@ -7,3 +7,17 @@ body{
     color: #204ECF;
     font-family: futura, sans-serif;
 }
+ main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+
+ h1, h2{
+    text-transform: uppercase;
+ }
+
+ p{
+    line-height: 2em;
+ }
