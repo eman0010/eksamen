@@ -1,3 +1,10 @@
+/* Overordnet */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
   height: 100%; 
@@ -5,13 +12,8 @@ img {
   display: block;
 }
 
-h2{
-   text-transform: uppercase;
-}
-
-p{
-  font-size: 14px;
-  line-height: 2em;
+section{
+  margin-top: 50px;
 }
 
 body{
@@ -31,28 +33,132 @@ body.index{
 }
 
 main{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   margin: 10px;
-   margin-top: 0;
-}
+   /* display: flex; */
+   /* flex-direction: column;
+   justify-content: center; */
+   /* text-align: center; */
+   /* margin: 50px;
+   margin-top: 0; */
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+   width: 80%;
+  
+  }
 
+  
+  /******************************* mobil ************************************/
+  
+  h1, h2, h3{
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 10px;
+  }
 
-
-/* FORSIDE */
-
-.illustration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
-
-.illustration img {
+  h1{
+    font-size: 1.5rem;
+  }
+  
+  /* section{
+    padding: 20px;
+  } */
+  
+  p{
+    font-size: 14px;
+    line-height: 2em;
+  }
+  
+  /* HEADER + FOOTER */
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      text-transform: uppercase;
+      background-color: #E8E4D9;
+  }
+  
+  .logo{
+    font-weight: bold;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  nav {
+      display: none;
+    }
+  
+  .burger {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+    
+  
+  .hidden-menu {
+      display: block;
+      background-color: #E8E4D9;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+    }
+   
+  
+  .hidden-menu {
+      display: none;
+  }
+  
+  .hidden-menu.show {
+      display: block; 
+  }
+  
+  
+  .hidden-menu ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  .hidden-menu li {
+      font-size: 6vw;
+      padding: 6vw; 
+      text-transform: uppercase;
+  }
+  
+  .hidden-menu ul li:hover {
+  text-decoration: underline;
+  }
+  
+  .hidden-menu p{
+    font-family: futura, sans-serif;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  /*****************FORSIDE ***********************/
+  
+  .illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .illustration img {
   width: 100%;
   object-fit: contain;
 }
@@ -73,132 +179,49 @@ main{
 }
 
 
-/* FORSIDE SLUT */
-
-
-/* HEADER + FOOTER */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    text-transform: uppercase;
-    background-color: #E8E4D9;
-}
-
-.logo{
-  font-weight: bold;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-
-nav {
-    display: none;
-  }
-
-.burger {
-  font-size: 35px;
-  margin-bottom: 5px;
-}
-  
-
-.hidden-menu {
-    display: block;
-    background-color: #E8E4D9;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    height: 100%;
-  }
- 
-
-.hidden-menu {
-    display: none;
-}
-
-.hidden-menu.show {
-    display: block; 
-}
-
-
-.hidden-menu ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-.hidden-menu li {
-    font-size: 6vw;
-    padding: 6vw; 
-    text-transform: uppercase;
-}
-
-.hidden-menu ul li:hover {
-text-decoration: underline;
-}
-
-.hidden-menu p{
-  font-family: futura, sans-serif;
-}
-
-footer{
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  text-align: center;
-}
-
-/* HEADER OG FOOTER SLUT */
-
-
-/* TEMA - OVERSIGT */
+/*****************************TEMA - OVERSIGT **************************/
 .temaer{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.temaer h1, h3{
+  text-align: center;
 }
 
 .temaer div{
   padding: 10px;
 }
 
-section h3 {
-  margin-bottom: 0.2em; }
-
-section p {
-  margin-top: 0;
-}
 
 .temaer a:hover{
     text-decoration: underline;
   }
 
-  /* KONTAKT */
+
+
+  /***************************** KONTAKT ****************************/
   .info{
     margin-top: 50px;
-    
+    text-align: center;
   }
-  .info div{
-    padding: 30px;
+
+  .info h2{
+    text-align: center;
   }
+
+
 
   /* OM */
-  .om{
-    padding: 50px;
-  }
 
-  .om img{
-    width: 100%;
-  }
 
-  /* TEMAER */
+
+
+
+  /* T02 */
+
 
   .tilbage {
     display: flex;
@@ -221,8 +244,15 @@ section p {
 }
 
 
-@media (width > 800px){
 
+/***************************** TABLET ****************************/
+
+
+@media (width > 768px){
+
+  h1{
+    font-size: 3rem;
+  }
 
     .burger-menu {
         display: none; 
@@ -258,12 +288,42 @@ section p {
         font-size: 1.5vw;
       }   
       
-      .grid_1_1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 5%;
-        column-gap: 20px;
-      }      
+
+    
 
 }
+
+
+/******************* desktop ***************'*/
+
+
+@media (width > 1024px){
+  
+ 
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 87px;
+  }  
+  
+  
+  .text_flex{
+    display: flex;
+    gap: 82px;
+  }
+
+  .text_flex h1{
+    text-align: left;
+  }
+
+  }
+
+
+
+
+
+
+
+
 
