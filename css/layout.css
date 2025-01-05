@@ -27,10 +27,16 @@ body{
    font-family: futura, sans-serif;
 }
 
-body.index{
+.index{
    background-color: #204ECF;
    background-image: none;
 }
+
+.index_main{
+  width: 100%;
+}
+
+
 
 main{
    max-width: 1200px;
@@ -82,6 +88,7 @@ main{
   a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
   }
   
   
@@ -92,6 +99,8 @@ main{
   .burger {
     font-size: 35px;
     margin-bottom: 5px;
+    overflow: hidden;
+    cursor: pointer;
   }
     
   
@@ -103,6 +112,7 @@ main{
       width: 100%;
       z-index: 1;
       height: 100%;
+      cursor: pointer;
     }
    
   
@@ -145,37 +155,101 @@ main{
   }
   
   /*****************FORSIDE ***********************/
-  
-  .illustration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+
+  .forside{
+    position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:80vh;
+    margin: 20px;
   }
   
-  .illustration img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.cover nav{
-  color: #E8E4D9;
-  text-transform: uppercase;
-  display: block;
-}
-
-.cover nav ul{
-  list-style-type: none;
-}
-
-.t{
-  position: relative;
-  top: 50%;
-}
-
-
+  .index_links{
+    color: #F5F5F0;
+  }
+  /* ****************LODRETTE LINJER ********************/
+  
+  .forside::before, .forside::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: #F5F5F0;
+    top: 20px;
+    bottom: 45px;
+   
+  }
+  
+  .forside::before{
+    left: 0%;
+  }
+  
+  .forside::after{
+    right: 0%;
+  }
+  
+  /*****************' TOP BORDER ***************'*/
+  
+  .top-border{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+  
+  .line{
+    flex: 1;
+    height: 5px;
+    background-color: #F5F5F0;
+  }
+  
+  .illustration{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .illustration img{
+    max-width: 70%;
+    height: auto;
+  }
+  
+  /*************** BOTTOM-CONTAINER ***********/
+  
+  .bottom-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  
+  .line-bottom{
+    flex-grow: 1;
+    height: 5px;
+    background-color: #F5F5F0;
+    margin: 0 5px;  
+  }
+  
+  .content-start, .content-end{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .content-start::before, .content-end::after{
+    content: "";
+    width: 7px;
+    height: 5px;
+    background-color: #F5F5F0;
+  }
+  
+  
 /*****************************TEMA - OVERSIGT **************************/
 .temaer{
     display: flex;
@@ -247,6 +321,9 @@ main{
 
 
 
+
+
+
 /***************************** TABLET ****************************/
 
 
@@ -308,6 +385,16 @@ main{
       .om p{
         font-size: 1.5vw;
       }  
+
+      /**************************** Forside ********************'*/
+
+      .forside{
+        height:95vh;
+
+      }
+
+ 
+
       
     /********************* T0 ******************/
 
