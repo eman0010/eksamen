@@ -30,7 +30,7 @@ main{
   max-width: 1200px;
   /* width: 100%; */
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 
@@ -67,7 +67,7 @@ section{
 
 h1, h2, h3{
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
   }
 
   h1{
@@ -85,8 +85,9 @@ h1, h2, h3{
   
   p{
     font-size: 1rem;
-    line-height: 2em;
-    text-align: left;
+    line-height: 1.5em;
+    /* text-align: left; */
+    text-align: center;
   }
   
   /* HEADER + FOOTER */
@@ -95,12 +96,15 @@ h1, h2, h3{
       align-items: center;
       justify-content: space-between;
       padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
       text-transform: uppercase;
       background-color: #ECEBE3;
   }
   
   .logo{
     font-weight: bold;
+    font-size: 20px;
   }
   
   a{
@@ -124,13 +128,14 @@ h1, h2, h3{
   
   .hidden-menu {
       display: block;
-      background-color: #E8E4D9;
+      background-color: #ECEBE3;
       position: absolute;
       left: 0;
       width: 100%;
       z-index: 1;
       height: 100%;
       cursor: pointer;
+      padding-top: 20px;
     }
    
   
@@ -145,7 +150,6 @@ h1, h2, h3{
   
   .hidden-menu ul {
       list-style-type: none;
-      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -194,8 +198,8 @@ h1, h2, h3{
     width: 5px;
     background-color: #F5F5F0;
     top: 20px;
-    bottom: 45px;
-   
+    /* bottom: 45px; */
+    height: 95%;
   }
   
   .forside::before{
@@ -244,7 +248,6 @@ h1, h2, h3{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 28px;
   }
   
   .line-bottom{
@@ -314,11 +317,20 @@ h1, h2, h3{
 
 
 
-  /* T02 */
+  /******************* T0 ***********************/
   .pil {
-      width: 14px; 
-      height: auto;
-      margin-right: 8px;
+    width: 1rem; 
+    height: auto;
+    margin-right: 8px;
+  }
+
+  .tilbage {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0044CC;
+    font-size: 1rem;
+    padding: 10px;
   }
 
   .text-container {
@@ -333,12 +345,14 @@ h1, h2, h3{
   }
   
   /* Lodret streg */
+
+
   .text-container::before {
     content: "";
     position: absolute;
     width: 5px;
-    height: 25%;
-    top: 75%;
+    height: 12%;
+    top: 87%;
     left: 0%;
     background-color: #1f3dc9;
   }
@@ -348,19 +362,21 @@ h1, h2, h3{
     content: "";
     position: absolute;
     height: 5px;
-    width: 10%;
+    width: 15%;
     right: 15px;
     background-color: #1f3dc9;
     top: 99%;
     left: 0;
   }
 
+  
+
   /* Form i øvre højre hjørne */
   .corner-shape::before {
     content: "";
     position: absolute;
     width: 5px;
-    height: 25%;
+    height: 12%;
     top: 0;
     right: 0;
     background-color: #1f3dc9;
@@ -370,27 +386,23 @@ h1, h2, h3{
   content: "";
   position: absolute;
   height: 5px; 
-  width: 10%; 
+  width: 15%; 
   top: 0; 
   right: 0; 
   background-color: #1f3dc9;
 }
 
 
-  .tilbage {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #0044CC;
-    font-size: 14px;
-    padding: 10px;
-  
-}
 
 
 .text-box{
   padding-top: 25px;
 }
+
+.mobilsite{
+padding: 25px;
+}
+
 
 
 
@@ -420,13 +432,16 @@ h1, h2, h3{
   
   
   p{
-    font-size: 1rem;
-    line-height: 2em;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   section{
     margin-top: 50px;
+  }
+
+  .logo{
+    font-size: 22px;
   }
 
     .burger-menu {
@@ -436,7 +451,7 @@ h1, h2, h3{
       nav {
         display: block;
         margin-left: auto;
-        font-size: 14px;
+        font-size: 18px;
         padding: 10px;
         position: relative;
         cursor: pointer;
@@ -475,6 +490,35 @@ h1, h2, h3{
 
       
     /********************* T02 ******************/
+
+    .pil{
+      font-size: 1.2rem;
+    }
+
+    .tilbage{
+      font-size: 1.2rem;
+    }
+
+    .text-container::before {
+      height: 40%;
+      top: 61%;
+      width: 7px;
+    }
+
+    .text-container::after {
+      width: 10%;
+      height: 7px;
+    }
+
+    .corner-shape::before{
+      height: 40%;
+      width: 7px;
+    }
+
+    .corner-shape::after {
+      width: 10%;
+      height: 7px;
+    }
     .mobilsite{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -498,6 +542,13 @@ h1, h2, h3{
       padding-top: 50px;
     }
 
+    .global{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10%;
+      padding-top: 50px;
+    }
+
     .website img {
       grid-area: image;
     }
@@ -508,17 +559,28 @@ h1, h2, h3{
 
     /**************************' T02 **************'*/
 
-    .proces1{
+    .proces_1_1_1{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
       padding-top: 50px;
     }
 
-    .proces2{
+    .proces_1_1{
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
+      padding-top: 50px;
+    }
+
+    .spilsite{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .karakterer{
       padding-top: 50px;
     }
 
@@ -532,7 +594,15 @@ h1, h2, h3{
   
   .text_grid {
     column-gap: 150px;
-  }  
+  }
+
+  .text-container::after {
+    width: 8%;
+  }
+
+  .corner-shape::after {
+    width: 8%;
+  }
   }
 
 
