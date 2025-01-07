@@ -49,14 +49,17 @@ img {
   background-color: #1f3dc9;
   color: white;
   transition: transform 0.3s ease;
-  max-width: 151px;
-  /* margin: 15px; */
+  width: 122px;
   }
 
-  .btn p{
+  /* .btn p{
   margin: 0;
   padding: 6px 16px;
-  }
+  } */
+  .btn p {
+    margin: 0;
+    padding: 6px 16px;
+}
 
   .btn:hover {
     transform: scale(1.1);
@@ -85,7 +88,7 @@ h1, h2, h3{
   
   p{
     font-size: 1rem;
-    line-height: 1.5em;
+    line-height: 1.8em;
     /* text-align: left; */
     text-align: center;
   }
@@ -133,7 +136,7 @@ h1, h2, h3{
       left: 0;
       width: 100%;
       z-index: 1;
-      height: 100%;
+      height: 300vh;
       cursor: pointer;
       padding-top: 20px;
     }
@@ -156,7 +159,7 @@ h1, h2, h3{
     }
   
   .hidden-menu li {
-      font-size: 6vw;
+      font-size: 5vw;
       padding: 6vw; 
       text-transform: uppercase;
   }
@@ -310,17 +313,63 @@ h1, h2, h3{
     text-align: center;
   }
 
+  .info{
+    padding: 40px;
+  }
+
+  .info p{
+    line-height: 2.5em;
+  }
 
 
-  /* OM */
 
+  /*********************** OM **********************/
+  .profil h1{
+    font-size: 1.6rem;
+  }
 
+  .profil p{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
 
+.about p{
+  text-align: left;
+}
 
+.erfaring h2{
+  text-align: left;
+}
+
+.about h2, .projekter h2, .skills h2{
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.erfaring p{
+  padding-top: 5px;
+  text-align: left;
+}
+
+.erfaring li, .projekter li, .skills li{
+  line-height: 1.8em;
+}
+
+.about, .erfaring, .projekter, .skills{
+  padding-top: 30px;
+}
+
+/* ul{
+    padding: 0 14px;
+} */
+
+.erfaring ul, .projekter ul, .skills ul{
+  padding: 0 14px;
+}
 
   /******************* T0 ***********************/
   .top{
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .pil {
     width: 1rem; 
@@ -341,8 +390,11 @@ h1, h2, h3{
     position: relative;
     margin: 1rem auto;
     padding: 1.5rem;
-    text-align: center;
     line-height: 1.6;
+  }
+
+  .text-container h1{
+    padding-bottom: 20px;
   }
   
   .text-container p{
@@ -367,7 +419,7 @@ h1, h2, h3{
     content: "";
     position: absolute;
     height: 5px;
-    width: 15%;
+    width: 21%;
     right: 15px;
     background-color: #1f3dc9;
     top: 99%;
@@ -391,7 +443,7 @@ h1, h2, h3{
   content: "";
   position: absolute;
   height: 5px; 
-  width: 15%; 
+  width: 21%; 
   top: 0; 
   right: 0; 
   background-color: #1f3dc9;
@@ -414,7 +466,7 @@ h1, h2, h3{
   padding-top: 25px;
 }
 .mobilsite img{
-  padding: 0px 30px;
+  padding: 0px 50px;
   margin-bottom: 30px;
 }
 
@@ -423,7 +475,7 @@ h1, h2, h3{
   padding: 25px 0;
 }
 
-.proces_1_1 div, .proces_1_1_1 div{
+.proces_1 div, .proces_1_1 div, .proces_1_1_1 div{
   padding-top: 25px;
 }
 
@@ -460,51 +512,17 @@ h1, h2, h3{
   
   p{
     font-size: 1.2rem;
-    text-align: center;
+    /* text-align: center; */
   }
 
-  section{
+  /* section{
     margin-top: 50px;
-  }
+  } */
 
   .logo{
-    font-size: 22px;
+    font-size: 25px;
   }
 
-    .burger-menu {
-        display: none; 
-      }
-
-      nav {
-        display: block;
-        margin-left: auto;
-        font-size: 18px;
-        padding: 10px;
-        position: relative;
-        cursor: pointer;
-      }
-      
-      nav ul {
-        display: flex;
-        gap: 50px; 
-        list-style-type: none;
-        margin: 0;
-      }
-
-
-      nav ul li:hover{
-        text-decoration: underline;
-      }
-
-      .om{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-      }
-
-      .om p{
-        font-size: 1.5vw;
-      }  
 
       /**************************** Forside ********************'*/
 
@@ -519,7 +537,7 @@ h1, h2, h3{
  
 
       
-    /********************* T02 ******************/
+    /********************* T0 ******************/
 
     .pil{
       font-size: 1.2rem;
@@ -534,24 +552,29 @@ h1, h2, h3{
       margin: 2rem auto;
     }
 
-    .text-container::before {
-      height: 40%;
-      top: 61%;
-      width: 7px;
-    }
+      
+  .text-container p{
+    text-align: center;
+  }
+
+  .text-container::before {
+    height: 20%;
+    top: 80%;
+    width: 7px;
+  }
 
     .text-container::after {
-      width: 10%;
+      width: 16%;
       height: 7px;
     }
 
     .corner-shape::before{
-      height: 40%;
+      height: 20%;
       width: 7px;
     }
 
     .corner-shape::after {
-      width: 10%;
+      width: 16%;
       height: 7px;
     }
     .mobilsite{
@@ -561,9 +584,13 @@ h1, h2, h3{
       padding-top: 50px;
     }
 
-    .text-box p{
-      padding: 0;
+    .text-box{
+      padding-bottom: 0;
     }
+
+    /* .text-box p{
+      padding: 0;
+    } */
     
 
     .website{
@@ -589,13 +616,15 @@ h1, h2, h3{
       grid-area: text;
     }
 
-    /**************************' T02 **************'*/
+    .proces{
+      padding-top: 120px;
+    }
 
     .proces_1_1_1{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
-      padding-top: 50px;
+      padding-top: 0;
     }
 
     .proces_1_1{
@@ -604,6 +633,13 @@ h1, h2, h3{
       gap: 10px;
       /* padding-top: 50px; */
     }
+
+
+    .proces_1 div, .proces_1_1 div, .proces_1_1_1 div {
+      padding-top: 30px;
+    }
+
+    
 
     .spilsite{
       display: flex;
@@ -616,6 +652,39 @@ h1, h2, h3{
       padding-top: 50px;
     }
 
+    /******************************** OM **********************/
+    .profil h1 {
+      font-size: 4vw;
+      text-align: left;
+    }
+
+    .profil p{
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    .profil{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .about h2{
+      text-align: center;
+    }
+
+    .about p{
+      text-align: center;
+    }  
+    
+    .img_container{
+      width: 100%;
+    }
+
+    .erfaring li, .projekter li, .skills li {
+      font-size: 1.1rem;
+    }
 }
 
 
@@ -623,19 +692,72 @@ h1, h2, h3{
 
 
 @media (width > 1024px){
+  .burger-menu {
+    display: none; 
+  }
+
+  nav {
+    display: block;
+    margin-left: auto;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 50px; 
+    list-style-type: none;
+    margin: 0;
+  }
+
+
+  nav ul li:hover{
+    text-decoration: underline;
+  }
   
   .text_grid {
     column-gap: 150px;
+  }
+
+  .text-container::before {
+    height: 29%;
+    top: 71%;
   }
 
   .text-container::after {
     width: 8%;
   }
 
+  .corner-shape::before{
+    height: 29%;
+  }
+
   .corner-shape::after {
     width: 8%;
   }
+
+  .om_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    padding-top: 40px;
   }
+
+  .erfaring::after {
+    content: "";
+    position: absolute;
+    height: 98%;
+    width: 4px;
+    right: 15px;
+    background-color: #1f3dc9;
+    top: 8%;
+    left: 49%;
+  }
+}
+  
 
 
 
