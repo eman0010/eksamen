@@ -41,18 +41,16 @@ img {
   display: block;
 }
 
-section{
+/* section{
   margin-top: 30px;
-}
+} */
 
 .btn{
   background-color: #1f3dc9;
   color: white;
   transition: transform 0.3s ease;
-  text-transform: uppercase;
-  font-weight: bold;
-  max-width: 150px;
-  margin: 15px;
+  max-width: 151px;
+  /* margin: 15px; */
   }
 
   .btn p{
@@ -63,7 +61,9 @@ section{
   .btn:hover {
     transform: scale(1.1);
   }
-/******************************* mobil ************************************/
+
+
+/******************************* MOBIL ************************************/
 
 h1, h2, h3{
     text-transform: uppercase;
@@ -190,7 +190,7 @@ h1, h2, h3{
   .index_links{
     color: #F5F5F0;
   }
-  /* ****************LODRETTE LINJER ********************/
+  /* **************** lodrette linjer ********************/
   
   .forside::before, .forside::after{
     content: "";
@@ -199,7 +199,7 @@ h1, h2, h3{
     background-color: #F5F5F0;
     top: 20px;
     /* bottom: 45px; */
-    height: 95%;
+    height: 94%;
   }
   
   .forside::before{
@@ -210,7 +210,7 @@ h1, h2, h3{
     right: 0%;
   }
   
-  /*****************' TOP BORDER ***************'*/
+  /***************** top border ***************'*/
   
   .top-border{
     display: flex;
@@ -242,7 +242,7 @@ h1, h2, h3{
     height: auto;
   }
   
-  /*************** BOTTOM-CONTAINER ***********/
+  /*************** bottom-container ***********/
   
   .bottom-container{
     display: flex;
@@ -276,6 +276,7 @@ h1, h2, h3{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 30px;
 }
 
 
@@ -318,6 +319,9 @@ h1, h2, h3{
 
 
   /******************* T0 ***********************/
+  .top{
+    padding-top: 20px;
+  }
   .pil {
     width: 1rem; 
     height: auto;
@@ -335,16 +339,18 @@ h1, h2, h3{
 
   .text-container {
     position: relative;
-    margin: 2rem auto;
-    padding: 2rem;
-    /* max-width: 800px; */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    margin: 1rem auto;
+    padding: 1.5rem;
     text-align: center;
     line-height: 1.6;
-    margin-bottom: 50px;
   }
   
-  /* Lodret streg */
+  .text-container p{
+    text-align: left;
+  }
+
+
+  /*********** form i nedre venstre hjørne **********/
 
 
   .text-container::before {
@@ -357,7 +363,6 @@ h1, h2, h3{
     background-color: #1f3dc9;
   }
 
-  /* Vandret streg */
   .text-container::after {
     content: "";
     position: absolute;
@@ -371,7 +376,7 @@ h1, h2, h3{
 
   
 
-  /* Form i øvre højre hjørne */
+  /********* Form i øvre højre hjørne *******/
   .corner-shape::before {
     content: "";
     position: absolute;
@@ -392,21 +397,43 @@ h1, h2, h3{
   background-color: #1f3dc9;
 }
 
-
-
-
 .text-box{
-  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.text-box p{
+  padding: 0 20px;
 }
 
 .mobilsite{
-padding: 25px;
+  padding-top: 25px;
+}
+.mobilsite img{
+  padding: 0px 30px;
+  margin-bottom: 30px;
 }
 
+.website{
+  /* padding-top: 25px; */
+  padding: 25px 0;
+}
 
+.proces_1_1 div, .proces_1_1_1 div{
+  padding-top: 25px;
+}
 
+.proces{
+  padding-top: 50px;
+}
 
-
+.global{
+  margin: 50px 0;
+}
 
 
 
@@ -483,7 +510,10 @@ padding: 25px;
 
       .forside{
         height:95vh;
+      }
 
+      .forside::before, .forside::after{
+        height: 95%;
       }
 
  
@@ -497,6 +527,11 @@ padding: 25px;
 
     .tilbage{
       font-size: 1.2rem;
+    }
+
+    .text-container {
+      padding: 2rem;
+      margin: 2rem auto;
     }
 
     .text-container::before {
@@ -526,13 +561,10 @@ padding: 25px;
       padding-top: 50px;
     }
 
-    .text-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-top: 0;
+    .text-box p{
+      padding: 0;
     }
+    
 
     .website{
       display: grid;
@@ -570,7 +602,7 @@ padding: 25px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-      padding-top: 50px;
+      /* padding-top: 50px; */
     }
 
     .spilsite{
