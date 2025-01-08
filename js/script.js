@@ -1,15 +1,8 @@
-if (window.innerWidth < 801) {
-  const burgerMenu = document.getElementById("burger-menu");
-  const menu = document.getElementById("menu");
+// Vælg burger-menu knappen og menuen
+const burgerMenu = document.getElementById("burger-menu");
+const menu = document.getElementById("menu");
 
-  burgerMenu.addEventListener("mousedown", (e) => {
-    e.stopPropagation();
-    menu.classList.toggle("show");
-  });
-
-  document.addEventListener("mousedown", (e) => {
-    if (!menu.contains(e.target) && !burgerMenu.contains(e.target)) {
-      menu.classList.remove("show");
-    }
-  });
-}
+// Tilføj en klik-event listener til burger-ikonet
+burgerMenu.addEventListener("click", () => {
+  menu.classList.toggle("show"); // Tilføj eller fjern 'show'-klassen for at åbne/lukke menuen
+});
