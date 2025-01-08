@@ -202,7 +202,7 @@ h1, h2, h3{
     background-color: #F5F5F0;
     top: 20px;
     /* bottom: 45px; */
-    height: 94%;
+    height: 95%;
   }
   
   .forside::before{
@@ -471,8 +471,7 @@ h1, h2, h3{
 }
 
 .website{
-  /* padding-top: 25px; */
-  padding: 25px 0;
+  padding: 50px 0;
 }
 
 .proces_1 div, .proces_1_1 div, .proces_1_1_1 div{
@@ -577,21 +576,15 @@ h1, h2, h3{
       width: 16%;
       height: 7px;
     }
-    .mobilsite{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10%;
-      padding-top: 50px;
-    }
-
-    .text-box{
-      padding-bottom: 0;
-    }
-
-    /* .text-box p{
-      padding: 0;
-    } */
     
+
+      
+      /* .mobilsite{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+        padding-top: 50px;
+      }
 
     .website{
       display: grid;
@@ -614,7 +607,8 @@ h1, h2, h3{
     
     .website .text-box {
       grid-area: text;
-    }
+    } */
+
 
     .proces{
       padding-top: 120px;
@@ -639,6 +633,9 @@ h1, h2, h3{
       padding-top: 30px;
     }
 
+    .mobilsite img {
+      padding: 0px 100px;
+    }
     
 
     .spilsite{
@@ -755,7 +752,43 @@ h1, h2, h3{
     background-color: #1f3dc9;
     top: 8%;
     left: 49%;
+  } 
+
+  .mobilsite{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    padding-top: 50px;
   }
+
+  .mobilsite img {
+    padding: 0px 25px;
+    margin-bottom: 30px;
+  }
+
+.website{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "image text";
+  gap: 10%;
+  padding-top: 50px;
+}
+
+.global{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10%;
+  padding-top: 50px;
+}
+
+.website img {
+  grid-area: image;
+}
+
+.website .text-box {
+  grid-area: text;
+}
+
 }
   
 
